@@ -1,0 +1,359 @@
+/* Section Dress */
+
+.dress {
+    background-image: url(../../assets/img/header-bg.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dress__texts {
+    grid-column: 1/2;
+    place-self: center;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 380px;
+    padding-left: 20px;
+}
+
+.dress__title {
+    font-family: Playfair Display;
+    font-weight: normal;
+    font-size: 2.8rem;
+}
+
+.dress__paragraph {
+    font-weight: 100;
+    font-family: Mulish;
+}
+
+.dress__button {
+    width: 150px;
+    font-family: Mulish;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 12px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.212);
+    box-shadow: 1 0 1px rgba(0, 0, 0, .5);
+    transition: background-color .5s, color .5s;
+}
+
+.dress__button:hover {
+    background-color: #fff;
+    color: var(--black);
+}
+
+/* Section Main */
+
+.main {
+    background: var(--gray1);
+    padding: 40px 100px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(220px, 1fr));
+    grid-template-areas: 
+        "collection collection bseller jacket"
+        "collection collection denim denim"
+    ;
+}
+
+.card {
+    border-radius: var(--round3);
+    
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.paragraph {
+    font-size: 1.1rem;
+    color: inherit;
+}
+
+.collection {
+    grid-area: collection;
+    background-image: linear-gradient(180deg, rgba(52, 52, 52, 0.0001) 0%, #343434ab 100%), url(../../assets/img/woman-collection.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0;
+}
+
+.collection__texts {
+    max-width: 170px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.bestSeller {
+    grid-area: bseller;
+    
+    background-color: var(--gray2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bestSeller__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2.5em;
+}
+
+.jacket {
+    grid-area: jacket;
+    background-image: linear-gradient(180deg, rgba(52, 52, 52, 0.0001) 0%, #34343470 100%), url(../../assets/img/dresses.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+    
+}
+
+.jacket__texts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 1.3em;
+    color: #fff;
+}
+
+
+.denim {
+    grid-area: denim;
+    background-image: url(../../assets/img/denim_jackets_category.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-right: 0;
+    /* display: flex; */
+}
+.denim__texts {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 1.3em;
+    color: #fff;
+}
+
+
+.main__products {
+    width: 100%;
+    background: #fff;
+    margin-top: 2em;
+    border-radius: var(--round3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.8em;
+    position: relative;
+}
+
+.chevron {
+    font-size: 24px;
+    position: absolute;
+    top: 45%;
+    display: inline-flex;
+    z-index: 2;
+    cursor: pointer;
+    color: #d1d6d6;
+}
+.chevron:first-of-type {
+    left: 0;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.chevron:last-of-type {
+    right: 0;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+
+.products__container {
+    text-align: center;
+    display: flex;
+    gap: 2em;
+}
+
+.product__item {
+    width: 180px;
+    height: 235px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    /* justify-content: space-between; */
+}
+
+.product__picture {
+    width: 90%;
+    max-height: 130px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.product__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.product__title {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 2em;
+}
+
+.cardsShop {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3em 0;
+}
+
+.cardShop {
+    width: 30%;
+    min-width: 300px;
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+
+.cardShop__picture {
+    height: 50%;
+}
+
+.cardShop__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardShop__texts {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between ;
+    gap: 5px;
+    padding: 10px 25px;
+}
+
+.cardShop__texts .paragraph {
+    color: var(--gray6);
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.cardShop__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cardShop__btn {
+    border: 1px solid var(--pink);
+    padding: 12px 30px;
+    border-radius: 1em;
+    background-color: inherit;
+    cursor: pointer;
+    color: var(--pink);
+    font-size: 1.1rem;
+    max-width: auto;
+
+    transition: background-color .5s, color .5s;
+    /* text-align: center; */
+}
+.cardShop__btn:hover {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.main__suggestion {
+    margin-top: 2em;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main {
+        padding: 40px 10px;
+    }
+    .dress {
+        background: #C4AFAC;
+        grid-template-columns: 1fr;
+        height: 400px;
+    }
+    .denim {
+        background: var(--pink);
+    }
+    .paragraph {
+        font-size: .9rem;
+    }
+    .card {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .cardShop:nth-last-of-type(1){
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, minmax(220px, 1fr));
+        grid-template-areas: 
+            "collection"
+            "bseller"
+            "jacket"
+            "denim"
+        ;
+        gap: 20px;
+    }
+
+    .denim {
+        margin-top: 0;
+    }
+
+    .cardsShop {
+        justify-content: center;
+        gap: 30px;
+    }
+    .cardShop:nth-last-of-type(1){
+        margin: 0;
+        margin-top: 0;
+    }
+}

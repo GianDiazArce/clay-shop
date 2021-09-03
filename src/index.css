@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize; /* bring in normalize.css styles */
+/* rest of app styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700&display=swap');
+
+:root {
+  --pink: #EDA3B5;
+  --white: #ffffff;
+  --black: #1B2437;
+
+  --gray1: #f6f6f6;
+  --gray2: #EFEFF4;
+  --gray3: #E5E5EA;
+  --gray4: #D1D1D6;
+  --gray5: #C7C7CC;
+  --gray6: #8E8E93;
+  --gray7: #48484A;
+
+  --round1: 2px;
+  --round2: 8px;
+  --round3: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Mulish', sans-serif;
+  /* background-color: var(--gray1); */
+  background-color: #f2f2f2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.title {
+  font-size: 2.125rem;
+  letter-spacing: .4px;
+  font-weight: normal;
+  font-family: Playfair Display;
+}
+
+.btn {
+  display: inline-flex;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  min-width: 70px;
+  max-width: 100px;
+  font-size: .87rem;
+  text-align: center;
+  border: none;
+  /* line-height: 1em; */
+  cursor: pointer;
+  color: var(--white);
+}
+
+@media screen and (max-width:800px) {
+  .container {
+    width: 95%;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }

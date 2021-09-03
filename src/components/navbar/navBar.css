@@ -1,0 +1,127 @@
+/* .menu {
+    width: 100%;
+    background-color: inherit;
+    color: var(--black);
+    --height-nav: 70px;
+    overflow: hidden;
+    color: red;
+}
+
+.menu__container {
+    background: #fff;
+    border-radius: var(--round3);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+} */
+
+
+
+
+.menu__bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__title {
+    font-family: Playfair Display;
+    color: inherit;
+    font-weight: normal;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+/* .menu__title::before {
+    content: url(data:image/svg+xml; utf8; ../../assets/img/logo.svg);
+    display: inline-flex;
+    content: "";
+    background-image: url(../../assets/img/logo.svg);
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+} */
+.menu__logo {
+    /* content: url(data:image/svg+xml; utf8; ../../assets/img/logo.svg); */
+    display: inline-flex;
+}
+
+.menu__icon {
+    color: inherit;
+    font-size: 1rem;
+    margin: 0 1em;
+    cursor: pointer;
+
+}
+
+.menu__hamburguer {
+    display: none;
+}
+
+.menu__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height-nav);
+}
+.menu__item {
+    list-style: none;
+    position: relative;
+    margin: 0 1.5em;
+    height: 100%;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: inherit;
+    line-height: var(--height-nav);
+}
+
+
+.menu__link--active::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 1em;
+    background: var(--black);
+    bottom: 0;
+    left: 45%;
+    box-shadow: -0.4px 0px 0px rgba(0, 0, 0, 0.6);
+    animation: animationLineNav .5s;
+}
+
+.menu__link--footer {
+    text-decoration: line-through;
+}
+
+.menu__icon:active {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes animationLineNav {
+    0% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        display: none;
+    }
+    .menu__social {
+        display: none;
+    }
+    .menu__searchAndCart {
+        display: none;
+    }
+    .menu__bar {
+        padding: 15px 0;
+    }
+    .menu__hamburguer {
+        display: flex;
+        font-size: 1.5rem;
+    }
+}

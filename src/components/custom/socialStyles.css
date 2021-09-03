@@ -1,0 +1,5 @@
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    color: var(--black);
+}
