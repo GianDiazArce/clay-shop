@@ -2,6 +2,9 @@
 El diseño lo saque de esta pagina
 - https://themeui.net/clay-shop-ecommerce-free-ui-kit/
 
+### Resultado
+- https://giandiazarce.github.io/clay-shop/
+
 ### `npm start`
 
 Runs the app in the development mode.\
