@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/clay-shop/static/css/main.ddf4ec55.chunk.css",
+    "main.js": "/clay-shop/static/js/main.11b167e8.chunk.js",
+    "main.js.map": "/clay-shop/static/js/main.11b167e8.chunk.js.map",
+    "runtime-main.js": "/clay-shop/static/js/runtime-main.3bfed53f.js",
+    "runtime-main.js.map": "/clay-shop/static/js/runtime-main.3bfed53f.js.map",
+    "static/js/2.86b12a70.chunk.js": "/clay-shop/static/js/2.86b12a70.chunk.js",
+    "static/js/2.86b12a70.chunk.js.map": "/clay-shop/static/js/2.86b12a70.chunk.js.map",
+    "static/js/3.817e43e1.chunk.js": "/clay-shop/static/js/3.817e43e1.chunk.js",
+    "static/js/3.817e43e1.chunk.js.map": "/clay-shop/static/js/3.817e43e1.chunk.js.map",
+    "index.html": "/clay-shop/index.html",
+    "static/css/main.ddf4ec55.chunk.css.map": "/clay-shop/static/css/main.ddf4ec55.chunk.css.map",
+    "static/js/2.86b12a70.chunk.js.LICENSE.txt": "/clay-shop/static/js/2.86b12a70.chunk.js.LICENSE.txt",
+    "static/media/homeStyles.css": "/clay-shop/static/media/woman-collection.6b88c501.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bfed53f.js",
+    "static/js/2.86b12a70.chunk.js",
+    "static/css/main.ddf4ec55.chunk.css",
+    "static/js/main.11b167e8.chunk.js"
+  ]
+}
